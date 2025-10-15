@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanaka Safa Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="logo">
+                <span class="header-title">Kanaka Safa Engineering</span>
+            </a>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Utama</a></li>
+                    <li><a href="#services" class="nav-link">Servis</a></li>
+                    <li><a href="#team" class="nav-link">Tim</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li><a href="#partners" class="nav-link">Partner</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-button" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Carousel -->
+    <section id="home" class="banner-section">
+        <div class="banner-carousel">
+            <div class="banner-slide active">
+                <img src="images/banner-1.png" alt="Industrial Safety" class="banner-image">
+                <div class="banner-content">
+                    <h1 class="banner-title">Your Safety is Our Priority</h1>
+                    <p class="banner-subtitle">Leading safety engineering solutions for industrial and construction sectors</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <<img src="images/banner-2.png" alt="Industrial Safety" class="banner-image">
+                <div class="banner-content">
+                    <h1 class="banner-title">Expert Safety Consultants</h1>
+                    <p class="banner-subtitle">Comprehensive risk assessment and compliance management</p>
+                </div>
+            </div>
+            <div class="banner-slide">
+                <img src="images/banner-3.png" alt="Industrial Safety" class="banner-image">
+                <div class="banner-content">
+                    <h1 class="banner-title">Professional Training Programs</h1>
+                    <p class="banner-subtitle">Certified safety training for your workforce</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">Pelayanan Teraman Kami</h2>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card" data-service="0" style="
+            background-image: url('images/uap-bejana-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Pesawat Uap dan Bejana Tekanan</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Pesawat Uap dan Bejana Tekan.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card" data-service="1" style="
+            background-image: url('images/paa-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/>
+                        <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/>
+                        <path d="M4 15v-3a6 6 0 0 1 6-6h0"/>
+                        <path d="M14 6h0a6 6 0 0 1 6 6v3"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Pesawat Angkat Dan Pesawat Angkut</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Pesawat Angkat Dan Pesawat Angkut</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card" data-service="2" style="
+            background-image: url('images/ptp-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Pesawat Tenaga dan Produksi</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Pesawat Tenaga dan Produksi</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <!-- Service 4 -->
+            <div class="service-card" data-service="3" style="
+            background-image: url('images/pdl-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Instalasi Listrik & Penyalur Petir</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Instalasi Listrik & Penyalur Petir</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <!-- Service 5 -->
+            <div class="service-card" data-service="4" style="
+            background-image: url('images/pk-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                        <path d="M12 9v4"/>
+                        <path d="M12 17h.01"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Instalasi Proteksi Kebakaran</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Instalasi Proteksi Kebakaran</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+            <!-- Service 6 -->
+            <div class="service-card" data-service="5" style="
+            background-image: url('images/ee-bg.png');
+            background-size: cover;">
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <path d="m9 15 2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Elevator dan Eskalator</h3>
+                <p class="service-description">Pemeriksaan dan Pengujian K3 Bidang Elevator dan Eskalator</p>
+                <button class="learn-more-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-description" id="modalDescription"></p>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <h2 class="section-title">Tim Handal Kami</h2>
+        <div class="workers-grid">
+            <div class="worker-card">
+                <div class="worker-image-container">
+                    <img src="images/team-1.png" class="worker-image">
+                </div>
+                <h3 class="worker-name">Ir. H. Erwin Nasution, S.E.,M.M.</h3>
+                <p class="worker-position">Komisaris</p>
+            </div>
+            <div class="worker-card">
+                <div class="worker-image-container">
+                    <img src="images/team-2.png" class="worker-image">
+                </div>
+                <h3 class="worker-name">Noval Rizky Hidayat, ST</h3>
+                <p class="worker-position">AK3 Spesialis Pesawat Angkat & Angkut</p>
+                <p class="worker-position">AK3 Spesialis Intalasi Proteksi Kebakaran</p>
+            </div>
+            <div class="worker-card">
+                <div class="worker-image-container">
+                    <img src="images/team-3.png" class="worker-image">
+                </div>
+                <h3 class="worker-name">Ir. Busrizal Faisal, MT</h3>
+                <p class="worker-position">AK3 Spesialis Pesawat Uap & Bejana Tekan</p>
+                <p class="worker-position">AK3 Spesialis Intalasi Listrik & Petir</p>
+                <p class="worker-position">AK3 Spesialis Elevator & Eskalator</p>
+            </div>
+            <div class="worker-card">
+                <div class="worker-image-container">
+                    <img src="images/team-4.png" class="worker-image">
+                </div>
+                <h3 class="worker-name">Supriono, ST</h3>
+                <p class="worker-position">AK3 Spesialis Pesawat Tenaga & Produksi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="about-content">
+            <div class="about-logo">
+                <img src="images/logo.png" alt="logo">
+                <!-- <h3 class="about-company-name">Kanaka Safa Engineering</h3> -->
+            </div>
+            <div class="about-text">
+                <h3>"Kenal Dulu, Selamat Kemudian"</h3>
+                <p> PT. Kanaka Safa Engineering (PT. KSE) merupakan Perusahaan Jasa Keselamatan dan Kesehatan Kerja (PJK3) yang telah mendapat izin resmi dari Kementerian Ketenagakerjaan Republik Indonesia di bidang pemeriksaan dan pengujian peralatan K3. Berdiri sejak 13 April 2017, PT. KSE berkomitmen untuk memberikan layanan profesional, terpercaya, dan berorientasi pada mutu guna memastikan keselamatan kerja dan kepuasan mitra kami.
+                
+                <br><br>Dengan pengalaman dan inovasi berkelanjutan, PT. KSE bertekad menjadi perusahaan PJK3 terkemuka di tingkat nasional dan regional, yang selalu menghadirkan solusi tepat guna serta layanan yang berkualitas dan terjangkau. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Galeri Kami</h2>
+
+      <div class="outer-gallery-carousel">
+        <div class="outer-gallery-track">
+          <!-- Slide 1 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Pesawat Uap Bejana Tekan</h3>
+            <div class="gallery-images">
+              <img src="images/pub-1.png" alt="Industrial Project 1">
+              <img src="images/pub-2.png" alt="Industrial Project 2">
+              <img src="images/pub-3.png" alt="Industrial Project 3">
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Pesawat Angkat Angkut</h3>
+            <div class="gallery-images">
+              <img src="images/paa-1.png" alt="Industrial Project 1">
+              <img src="images/paa-2.png" alt="Industrial Project 2">
+              <img src="images/paa-3.png" alt="Industrial Project 3">
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Pesawat Tenaga Produksi</h3>
+            <div class="gallery-images">
+              <img src="images/ptp-1.png" alt="Industrial Project 1">
+              <img src="images/ptp-2.png" alt="Industrial Project 2">
+              <img src="images/ptp-3.png" alt="Industrial Project 3">
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Proteksi Kebakaran</h3>
+            <div class="gallery-images">
+              <img src="images/pk-1.png" alt="Industrial Project 1">
+              <img src="images/pk-2.png" alt="Industrial Project 2">
+              <!-- <img src="images/pk-3.png" alt="Industrial Project 3"> -->
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Proteksi Petir Dan Listrik</h3>
+            <div class="gallery-images">
+              <img src="images/pdl-1.png" alt="Industrial Project 1">
+              <img src="images/pdl-2.png" alt="Industrial Project 2">
+              <!-- <img src="images/pdl-3.png" alt="Industrial Project 3"> -->
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="outer-gallery-slide">
+            <h3 class="gallery-title">Proteksi Elevator dan Eskalator</h3>
+            <div class="gallery-images">
+              <img src="images/ee-1.png" alt="Industrial Project 1">
+              <img src="images/ee-2.png" alt="Industrial Project 2">
+              <img src="images/ee-3.png" alt="Industrial Project 3">
+            </div>
+          </div>
+
+        </div>
+        <button class="gallery-nav prev">&#10094;</button>
+        <button class="gallery-nav next">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section">
+        <h2 class="section-title">Pengalaman Dan Partner Kami</h2>
+        <div class="partners-grid">
+            <div class="partner-logo">
+                <img src="images/partner.png" alt="Industrial Project 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>(+62) 822-7772-6931</p>
+                    </div>
+                </div>
+                <!-- <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>info@safetypro.com</p>
+                    </div>
+                </div> -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Alamat Perusahaan</h4>
+                        <p>Jl.Bangau KomplekThe Raztan Blok A No.34 Medan - Kecamatan Sunggal Kota Medan-Sumatera Utara– 20122</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Kantor Perwakilan (Jabodetabek)</h4>
+                        <p>Jl. Raya Cileungsi-Jonggol Km 3, Komp Harvest City, Cluster Oleander Blok OJ 12 No 8 Kabupaten Bekasi, Jawa Barat</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Kantor Perwakilan (Jawa Tengah, Jawa Timur, Bali, NTB)</h4>
+                        <p>Jl. Murti Maya No.260-262,Perumahan Muktiharjo, Kel.Muktiharjo Kidul, Kec.pedurungan, KotaSemarang, Jawa Tengah, 5111.</p>
+                    </div>
+                </div>
+                <!-- <div class="contact-item">
+                    <div class="contact-details">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect width="4" height="12" x="2" y="9"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9973438526126!2d98.62727142403425!3d3.588083400299632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fec42cfe6c1%3A0x8bbd44851937f8d1!2sPT.%20Kanaka%20Safa%20Engineering!5e0!3m2!1sen!2sid!4v1760521729576!5m2!1sen!2sid" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Kanaka Safa Engineering. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
