@@ -807,6 +807,11 @@ html {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    
+    .logo{
+        font-size: 1rem;
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
